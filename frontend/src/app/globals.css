@@ -2,3 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #32ae4dc0;
+  --secondary-color: #f39c12;
+  --text: #333;
+  --textSoft: #666;
+  --textLight: #999;
+  --btn: #1c6d2ee1; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+  font-family: 'Nunito', sans-serif;
+}
+
+.container{
+  background-color: var(--primary-color);
+  max-width: 1536px;
+  margin: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1536px) {
+  .container{
+    width: 1366px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .container{
+    width: 1280px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container{
+    width: 1024px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container{
+    width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container{
+    width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container{
+    width: 480px;
+    }
+}

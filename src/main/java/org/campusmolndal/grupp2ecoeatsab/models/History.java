@@ -1,6 +1,7 @@
 package org.campusmolndal.grupp2ecoeatsab.models;
 
 public class History {
+    @Id()
     public  int id;
     private String products;
     private String deliveryAddress;
