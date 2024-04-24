@@ -1,5 +1,3 @@
-// LoginService.java
-
 package org.campusmolndal.grupp2ecoeatsab.services;
 
 import org.campusmolndal.grupp2ecoeatsab.models.User;
@@ -8,19 +6,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class LoginService {
+public class AuthenticationService { // Ret stavefejl her
 
     private final UserRepository userRepository;
 
     @Autowired
-    public LoginService(UserRepository userRepository) {
+    public AuthenticationService(UserRepository userRepository) { // Ret stavefejl her
         this.userRepository = userRepository;
     }
 
     // Metod för att logga in användaren
     public boolean loginUser(String username, String password) {
         // Hitta användaren baserat på användarnamn i databasen
-        User user = userRepository.findUserByUsername(username);
+        User user = userRepository.findByUsername(username);
         // Om användaren inte hittades eller lösenordet är felaktigt, returnera false
         if (user == null || !user.getPassword().equals(password)) {
             System.out.println("Felaktigt användarnamn eller lösenord.");
@@ -31,4 +29,6 @@ public class LoginService {
         System.out.println("Inloggning lyckades för användare: " + username);
         return true;
     }
+
+    //ska finnas metod för att registrera sig
 }

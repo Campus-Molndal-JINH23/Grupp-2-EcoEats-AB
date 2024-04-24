@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"org.campusmolndal.grupp2ecoeatsab.services", "org.campusmolndal.grupp2ecoeatsab.repositories"})
 @EntityScan("org.campusmolndal.grupp2ecoeatsab.models")
 public class Grupp2EcoEatsAbApplication {
 

@@ -1,18 +1,30 @@
 package org.campusmolndal.grupp2ecoeatsab.models;
 
 public class History {
+    public  int id;
     private String products;
     private String deliveryAddress;
     private User user; // Referens till användaren
 
     // Konstruktor för att skapa en ny instans av History med produkter och leveransadress
-    public History(String products, String deliveryAddress, User user) {
+    public History(int id, String products, String deliveryAddress, User user) {
+        this.id= id;
         this.products = products;
         this.deliveryAddress = deliveryAddress;
         this.user = user; // Lägg till användaren i konstruktorn
     }
 
     // Getter-metod för produkter
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getProducts() {
         return products;
     }

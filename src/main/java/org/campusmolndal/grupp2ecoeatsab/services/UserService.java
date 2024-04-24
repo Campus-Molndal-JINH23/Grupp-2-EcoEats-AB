@@ -2,27 +2,32 @@ package org.campusmolndal.grupp2ecoeatsab.services;
 
 import org.campusmolndal.grupp2ecoeatsab.models.User;
 import org.campusmolndal.grupp2ecoeatsab.repositories.UserRepository;
-public class UserService {
-    private UserRepository userRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-    // Konstruktor för att skapa en ny UserService-instans
+@Service
+public class UserService {
+
+    private final UserRepository userRepository;
+
+    @Autowired
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
-    // Metod för att validera användaruppgifter
+    // Metod for at validere brugeroplysninger
     public boolean validateUser(String username, String password) {
-        // Hitta användaren baserat på användarnamn i databasen
-        User user = userRepository.findUserByUsername(username);
-        // Om användaren inte hittades eller lösenordet är felaktigt, returnera false
+        // Find brugeren baseret på brugernavn i databasen
+        User user = userRepository.findByUsername(username);
+        // Hvis brugeren ikke blev fundet, eller hvis adgangskoden er forkert, returneres falsk
         return user != null && user.getPassword().equals(password);
     }
 
-    // Metod för att skapa en ny användarprofil
+    // Metod for at oprette en ny brugerprofil
     public void createUser(String username, String password, String email) {
-        // Skapa en ny användarinstans
+        // Opret en ny brugerinstans
         User newUser = new User(username, password, email);
-        // Spara den nya användaren i databasen
-        userRepository.saveUser(newUser);
+        // Gem den nye bruger i databasen
+        userRepository.save(newUser);
     }
 }
