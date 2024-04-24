@@ -1,12 +1,15 @@
 // ShoppingCartController.java
 package org.campusmolndal.grupp2ecoeatsab.controllers;
 
+
+/*
 import org.campusmolndal.grupp2ecoeatsab.models.Product;
 import org.campusmolndal.grupp2ecoeatsab.models.ShoppingCart;
 import org.campusmolndal.grupp2ecoeatsab.services.ShoppingCartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 @RequestMapping("/shopping-cart")
@@ -47,3 +50,6 @@ public class ShoppingCartController {
         return ResponseEntity.ok("Varukorgen har rensats.");
     }
 }
+
+*/
+

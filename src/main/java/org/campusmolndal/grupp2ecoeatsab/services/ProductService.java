@@ -37,11 +37,9 @@ public class ProductService {
     }
 
     // Metod för att skapa en ny produkt
-    public void createProduct(String name, double price, String description) {
-        // Skapar ett nytt produktobjekt
-        Product newProduct = new Product(name, price, description);
+    public void createProduct(Product product) {
         // Sparar den nya produkten i databasen
-        productRepository.save(newProduct);
+        productRepository.save(product);
     }
     // Metod för att lägga till en produkt i varukorgen
     public void addToCart(Product product) {

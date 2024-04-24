@@ -11,25 +11,21 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "products")
-public class Product {
+@Table(name = "order_items")
+public class OrderItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
-    private String name;
-
-    @Column(nullable = false)
-    private String description;
-
-    @Column(nullable = false)
-    private double price;
+    @ManyToOne
+    @JoinColumn(name = "product_id", nullable = false)
+    private Product product;
 
     @ManyToOne
-    @JoinColumn(name="category_id", nullable = false)
-    private Category category;
+    @JoinColumn(name = "order_id")
+    private Order order;
 
-
+    @Column(nullable = false)
+    private int quantity;
 }

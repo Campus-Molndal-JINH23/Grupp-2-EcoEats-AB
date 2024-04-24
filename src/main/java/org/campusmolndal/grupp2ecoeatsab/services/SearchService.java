@@ -1,5 +1,6 @@
 package org.campusmolndal.grupp2ecoeatsab.services;
 
+/*
 import org.campusmolndal.grupp2ecoeatsab.models.Product;
 import org.springframework.stereotype.Service;
 
@@ -22,3 +23,6 @@ public class SearchService {
 }
 // Her kan vi implementera logiken för att söka efter produkter baserat på söktermen
 // Till exempel kan denna metod anropa en ProductRepository för att hämta produkter från en databas
+
+
+ */

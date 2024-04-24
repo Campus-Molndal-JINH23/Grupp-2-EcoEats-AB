@@ -1,6 +1,8 @@
 // ShoppingCartService.java
 package org.campusmolndal.grupp2ecoeatsab.services;
 
+
+/*
 import org.campusmolndal.grupp2ecoeatsab.models.Product;
 import org.campusmolndal.grupp2ecoeatsab.models.ShoppingCart;
 import org.springframework.stereotype.Service;
@@ -28,3 +30,5 @@ public class ShoppingCartService {
         shoppingCart.clear();
     }
 }
+
+ */

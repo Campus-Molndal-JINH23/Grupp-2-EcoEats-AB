@@ -24,10 +24,8 @@ public class UserService {
     }
 
     // Metod for at oprette en ny brugerprofil
-    public void createUser(String username, String password, String email) {
-        // Opret en ny brugerinstans
-        User newUser = new User(username, password, email);
+    public void createUser(User user) {
         // Gem den nye bruger i databasen
-        userRepository.save(newUser);
+        userRepository.save(user);
     }
 }
