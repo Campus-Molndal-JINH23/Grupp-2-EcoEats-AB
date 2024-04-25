@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 const LoginForm = () => {
   return (
-    <div className = {styles.loginContainer} id="loginform">
+    <div className = "flex justify-center items-center rounded-lg w-1/2 bg-white" id="loginform">
       <FormHeader title="Login" />
       <Form />
     </div>
