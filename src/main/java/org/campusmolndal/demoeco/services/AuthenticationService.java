@@ -1,7 +1,7 @@
-package org.campusmolndal.grupp2ecoeatsab.services;
+package org.campusmolndal.demoeco.services;
 
-import org.campusmolndal.grupp2ecoeatsab.models.User;
-import org.campusmolndal.grupp2ecoeatsab.repositories.UserRepository;
+import org.campusmolndal.demoeco.models.User;
+import org.campusmolndal.demoeco.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

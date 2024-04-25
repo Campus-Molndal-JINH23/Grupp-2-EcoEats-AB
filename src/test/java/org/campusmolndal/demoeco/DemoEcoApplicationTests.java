@@ -1,13 +1,13 @@
-package org.campusmolndal.grupp2ecoeatsab;
+package org.campusmolndal.demoeco;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Grupp2EcoEatsAbApplicationTests {
+class DemoEcoApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

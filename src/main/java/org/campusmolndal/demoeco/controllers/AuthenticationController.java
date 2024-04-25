@@ -1,7 +1,7 @@
-// LoginController.java
-package org.campusmolndal.grupp2ecoeatsab.controllers;
+package org.campusmolndal.demoeco.controllers;
 
-import org.campusmolndal.grupp2ecoeatsab.services.AuthenticationService;
+
+import org.campusmolndal.demoeco.services.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

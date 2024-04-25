@@ -1,4 +1,4 @@
-package org.campusmolndal.grupp2ecoeatsab.services;
+package org.campusmolndal.demoeco.services;
 
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package org.campusmolndal.grupp2ecoeatsab.controllers;
+package org.campusmolndal.demoeco.controllers;
 
-import org.campusmolndal.grupp2ecoeatsab.services.SupportService;
+import org.campusmolndal.demoeco.services.SupportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

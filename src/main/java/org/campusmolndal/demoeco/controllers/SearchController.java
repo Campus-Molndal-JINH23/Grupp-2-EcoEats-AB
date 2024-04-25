@@ -1,8 +1,7 @@
-package org.campusmolndal.grupp2ecoeatsab.controllers;
+package org.campusmolndal.demoeco.controllers;
 
-/*
-
-import org.campusmolndal.grupp2ecoeatsab.models.Product;
+import org.campusmolndal.demoeco.models.Product;
+import org.campusmolndal.demoeco.services.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,6 +27,3 @@ public class SearchController {
         return ResponseEntity.ok(searchResults);
     }
 }
-
-
- */

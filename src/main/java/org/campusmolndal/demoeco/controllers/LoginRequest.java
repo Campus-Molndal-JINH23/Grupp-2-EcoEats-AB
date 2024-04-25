@@ -1,6 +1,6 @@
-package org.campusmolndal.grupp2ecoeatsab.controllers;
+package org.campusmolndal.demoeco.controllers;
 
-import org.campusmolndal.grupp2ecoeatsab.services.AuthenticationService;// LoginRequest.java
+import org.campusmolndal.demoeco.services.AuthenticationService;// LoginRequest.java
 
 public class LoginRequest {
     private String username;

@@ -1,16 +1,15 @@
-package org.campusmolndal.grupp2ecoeatsab.controllers;
+package org.campusmolndal.demoeco.controllers;
 
-import org.campusmolndal.grupp2ecoeatsab.models.Product;
-import org.campusmolndal.grupp2ecoeatsab.services.ProductService;
+import org.campusmolndal.demoeco.models.Product;
+import org.campusmolndal.demoeco.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
 // Kontrollerklass för att hantera HTTP-förfrågningar relaterade till produkter
 @RestController
-@RequestMapping("/api/produkter")
+@RequestMapping("/api/products")
 public class ProductController {
 
     private final ProductService productService;
@@ -21,7 +20,7 @@ public class ProductController {
     }
 
 
-    // Hämta produktinformation baserat på produktens ID
+    // Hämta produktinformation baserat på produktens ID - Samahs kod
     @GetMapping("/{productId}")
     public ResponseEntity<Product> getProduct(@PathVariable Long productId) {
         Product product = productService.getProductById(productId);
@@ -32,7 +31,13 @@ public class ProductController {
         }
     }
 
-    // Metod för att lägga till en produkt i varukorgen
+    // Hongzhis kod
+    @PostMapping("/products")
+    public Product createProduct(@RequestBody Product product) {
+        return productService.createProduct(product);
+    }
+
+    // Metod för att lägga till en produkt i varukorgen - Samahs kod
     @PostMapping("/läggTillIVarukorgen")
     public ResponseEntity<String> läggTillIVarukorgen(@RequestBody Product produkt) {
 
