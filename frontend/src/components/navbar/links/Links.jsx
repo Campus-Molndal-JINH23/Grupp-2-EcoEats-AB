@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import ProfileLink from "./navLink/ProfileLink";
 import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
 
@@ -9,6 +9,10 @@ import NavLink from "./navLink/navLink";
         {
             title: "Produkter",
             path: "/products",
+        },
+        {
+            title: "Våra gårdar",
+            path: "/farms",
         },
         {
             title: "Om oss",
@@ -37,8 +41,9 @@ import NavLink from "./navLink/navLink";
                     {session? (
                         <>
                             {isAdmin && <NavLink item={{title: "Admin", path: "/admin"}}/>}
-                            {!isAdmin && <NavLink item={{title: "Profil", path: "/profile"}}/>}
                             <button className={styles.logout}>Logga ut</button>
+                            {!isAdmin && <NavLink item={{title:"Profil", path: '/profile'}} />}
+                            
                         </>
                     ) : (
                         <NavLink item={{title: "Logga in", path: "/login"}}/>

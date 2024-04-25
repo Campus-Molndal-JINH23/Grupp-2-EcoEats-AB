@@ -1,6 +1,5 @@
 import React from "react";
 import Link from 'next/link';
-import LoginForm from "../../components/loginForm/LoginForm.jsx";
 
 export default function Login() {
   return (
@@ -24,7 +23,7 @@ export default function Login() {
             />
                 <Link href="/register" className="text-blue-500 hover:underline text-sm">Registrera dig här</Link>
           </div>
-          <button className="w-1/3 mb-4 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Logga in</button>
+          <button className="w-72 mb-4 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Logga in</button>
         </div>
       </div>
     </div>
