@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 
 const products = [
-    { id: 1, name: 'agg', price: '$10', image: '/eggs.jpg' },
-    { id: 2, name: 'Frukt', price: '$20', image: '/fruits_vegetables.jpg' },
-    { id: 3, name: 'honung', price: '$30', image: '/honey.jpg' },
-    { id: 4, name: 'kott', price: '$40', image: '/meat.jpg' },
-    { id: 5, name: 'Mjolk', price: '$50', image: '/milk.jpg' },
-    { id: 6, name: 'Vin', price: '$60', image: '/wine.jpg' },
+    { id: 1, name: 'agg', image: '/eggs.jpg' },
+    { id: 2, name: 'Frukt', image: '/fruits_vegetables.jpg' },
+    { id: 3, name: 'honung', image: '/honey.jpg' },
+    { id: 4, name: 'kott', image: '/meat.jpg' },
+    { id: 5, name: 'Mjolk', image: '/milk.jpg' },
+    { id: 6, name: 'Vin', image: '/wine.jpg' },
 ];
 
 const Products = () => {
